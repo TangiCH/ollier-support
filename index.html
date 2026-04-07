@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollier Disease - Support Group</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            /* Използваме изображението като фон с леко прозрачно наслагване за четливост */
+            background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('image_0.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .top-bar {
+            background-color: rgba(26, 37, 47, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            position: fixed; /* Горната лента е фиксирана */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .fb-btn {
+            background-color: #3b5998;
+            color: white;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .fb-btn:hover {
+            background-color: #2d4373;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .lang-switcher button {
+            background-color: rgba(52, 73, 94, 0.9);
+            color: white;
+            border: 1px solid #ecf0f1;
+            padding: 0.3rem 0.6rem;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        .lang-switcher button:hover {
+            background-color: #2c3e50;
+        }
+        header {
+            background-color: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem 3rem; /* Добавено горно поле за да не се скрива зад фиксираната лента */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: rgba(52, 73, 94, 0.95);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0.5rem 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.95); /* Контейнерите са леко прозрачни */
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-weight: normal;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            background-color: rgba(236, 240, 241, 0.9);
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: rgba(44, 62, 80, 0.95);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="https://www.facebook.com/groups/238796716896463" target="_blank" class="fb-btn" data-i18n="fbButton">Facebook Group</a>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="bg">BG</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="it">IT</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+    </div>
+
+    <header>
+        <h1 data-i18n="title">Ollier Disease - Support Group</h1>
+        <p data-i18n="subtitle">Sharing, understanding, and hope for everyone</p>
+    </header>
+
+    <nav>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#community" data-i18n="navCommunity">Our Community</a>
+        <a href="#resources" data-i18n="navResources">Resources</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2 data-i18n="aboutTitle">About Ollier Disease</h2>
+            <p data-i18n="aboutText">Ollier disease (also known as enchondromatosis) is a rare condition where benign cartilaginous tumors develop in the bones. Our mission is to provide accessible and accurate information to help patients and their families better understand the diagnosis.</p>
+        </section>
+
+        <section id="community">
+            <h2 data-i18n="communityTitle">Our Community</h2>
+            <p data-i18n="communityText">The journey with a rare diagnosis can be difficult, but you don't have to walk it alone. Our group brings together people with Ollier disease from different places to:</p>
+            <ul>
+                <li data-i18n="li1">Share personal stories and daily challenges.</li>
+                <li data-i18n="li2">Exchange tips for managing symptoms and treatments.</li>
+                <li data-i18n="li3">Find emotional support in a safe and understanding environment.</li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2 data-i18n="resourcesTitle">Useful Resources</h2>
+            <p data-i18n="resourcesText">Here we will collect links to medical articles, specialist contacts, and physiotherapy guidelines that our group members find useful.</p>
+            <ul>
+                <li data-i18n="rli1">Guidelines for consulting an orthopedic surgeon</li>
+                <li data-i18n="rli2">International rare disease organizations</li>
+                <li data-i18n="rli3">Practical tips for everyday life</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contactTitle">Contact Us</h2>
+            <p data-i18n="contactText">If you want to join our community or have an inquiry, we would love to hear from you. Every message is important to us.</p>
+            <div class="contact-info">
+                <p data-i18n="email">Email: contact@ollier-support-group.org</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p data-i18n="footerText">&copy; 2026 Ollier Disease Support Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const translations = {
+                en: {
+                    fbButton: "Facebook Group",
+                    title: "Ollier Disease - Support Group",
+                    subtitle: "Sharing, understanding, and hope for everyone",
+                    navAbout: "About",
+                    navCommunity: "Our Community",
+                    navResources: "Resources",
+                    navContact: "Contact",
+                    aboutTitle: "About Ollier Disease",
+                    aboutText: "Ollier disease (also known as enchondromatosis) is a rare condition where benign cartilaginous tumors develop in the bones. Our mission is to provide accessible and accurate information to help patients and their families better understand the diagnosis.",
+                    communityTitle: "Our Community",
+                    communityText: "The journey with a rare diagnosis can be difficult, but you don't have to walk it alone. Our group brings together people with Ollier disease from different places to:",
+                    li1: "Share personal stories and daily challenges.",
+                    li2: "Exchange tips for managing symptoms and treatments.",
+                    li3: "Find emotional support in a safe and understanding environment.",
+                    resourcesTitle: "Useful Resources",
+                    resourcesText: "Here we will collect links to medical articles, specialist contacts, and physiotherapy guidelines that our group members find useful.",
+                    rli1: "Guidelines for consulting an orthopedic surgeon",
+                    rli2: "International rare disease organizations",
+                    rli3: "Practical tips for everyday life",
+                    contactTitle: "Contact Us",
+                    contactText: "If you want to join our community or have an inquiry, we would love to hear from you. Every message is important to us.",
+                    email: "Email: contact@ollier-support-group.org",
+                    footerText: "© 2026 Ollier Disease Support Group. All rights reserved."
+                },
+                de: {
+                    fbButton: "Facebook-Gruppe",
+                    title: "Morbus Ollier - Selbsthilfegruppe",
+                    subtitle: "Austausch, Verständnis und Hoffnung für alle",
+                    navAbout: "Über die Krankheit",
+                    navCommunity: "Unsere Gemeinschaft",
+                    navResources: "Ressourcen",
+                    navContact: "Kontakt",
+                    aboutTitle: "Über Morbus Ollier",
+                    aboutText: "Morbus Ollier (auch bekannt als Enchondromatose) ist eine seltene Erkrankung, bei der sich gutartige Knorpeltumore in den Knochen entwickeln. Unsere Mission ist es, zugängliche und genaue Informationen bereitzustellen, um Patienten und ihren Angehörigen zu helfen, die Diagnose besser zu verstehen.",
+                    communityTitle: "Unsere Gemeinschaft",
+                    communityText: "Der Weg mit einer seltenen Diagnose kann schwierig sein, aber Sie müssen ihn nicht alleine gehen. Unsere Gruppe bringt Menschen mit Morbus Ollier aus verschiedenen Orten zusammen, um:",
+                    li1: "Persönliche Geschichten und alltägliche Herausforderungen zu teilen.",
+                    li2: "Tipps zum Umgang mit Symptomen und Behandlungen auszutauschen.",
+                    li3: "Emotionale Unterstützung in einer sicheren und verständnisvollen Umgebung zu finden.",
+                    resourcesTitle: "Nützliche Ressourcen",
+                    resourcesText: "Hier sammeln wir Links zu medizinischen Artikeln, Kontakten von Spezialisten und Richtlinien für Physiotherapie, die unsere Gruppenmitglieder nützlich finden.",
+                    rli1: "Richtlinien für die Konsultation eines Orthopäden",
+                    rli2: "Internationale Organisationen für seltene Krankheiten",
+                    rli3: "Praktische Tipps für den Alltag",
+                    contactTitle: "Kontaktiere uns",
+                    contactText: "Wenn Sie unserer Gemeinschaft beitreten möchten oder eine Anfrage haben, freuen wir uns von Ihnen zu hören. Jede Nachricht ist uns wichtig.",
+                    email: "E-Mail: contact@ollier-support-group.org",
+                    footerText: "© 2026 Morbus Ollier Selbsthilfegruppe. Alle Rechte vorbehalten."
+                },
+                ru: {
+                    fbButton: "Группа в Facebook",
+                    title: "Болезнь Олье - Группа поддержки",
+                    subtitle: "Общение, понимание и надежда для каждого",
+                    navAbout: "О заболевании",
+                    navCommunity: "Наше сообщество",
+                    navResources: "Ресурсы",
+                    navContact: "Контакты",
+                    aboutTitle: "О болезни Олье",
+                    aboutText: "Болезнь Олье (также известная как энхондроматоз) - это редкое заболевание, при котором в костях развиваются доброкачественные хрящевые опухоли. Наша миссия - предоставлять доступную и точную информацию, чтобы помочь пациентам и их близким лучше понять диагноз.",
+                    communityTitle: "Наше сообщество",
+                    communityText: "Путь с редким диагнозом может быть трудным, но вам не обязательно идти по нему в одиночку. Наша группа объединяет людей с болезнью Олье из разных мест, чтобы:",
+                    li1: "Делиться личными историями и повседневными трудностями.",
+                    li2: "Обмениваться советами по устранению симптомов и лечению.",
+                    li3: "Находить эмоциональную поддержку в безопасной и понимающей среде.",
+                    resourcesTitle: "Полезные ресурсы",
+                    resourcesText: "Здесь мы будем собирать ссылки на медицинские статьи, контакты специалистов и рекомендации по физиотерапии, которые члены нашей группы находят полезными.",
+                    rli1: "Рекомендации по консультации с ортопедом",
+                    rli2: "Международные организации по редким заболеваниям",
+                    rli3: "Практические советы для повседневной жизни",
+                    contactTitle: "Свяжитесь с нами",
+                    contactText: "Если вы хотите присоединиться к нашему сообществу или у вас есть вопрос, мы будем рады получить от вас сообщение. Каждое сообщение важно для нас.",
+                    email: "Эл. почта: contact@ollier-support-group.org",
+                    footerText: "© 2026 Группа поддержки - Болезнь Олье. Все права защищены."
+                },
+                bg: {
+                    fbButton: "Facebook група",
+                    title: "Болест на Олиер - Група за подкрепа",
+                    subtitle: "Споделяне, разбиране и надежда за всеки",
+                    navAbout: "За състоянието",
+                    navCommunity: "Нашата общност",
+                    navResources: "Ресурси",
+                    navContact: "Контакти",
+                    aboutTitle: "За болестта на Олиер",
+                    aboutText: "Болестта на Олиер (известна още като енхондроматоза) е рядко състояние, при което в костите се развиват доброкачествени хрущялни тумори. Нашата мисия е да предоставим достъпна и точна информация, за да помогнем на пациентите и техните близки да разберат по-добре диагнозата.",
+                    communityTitle: "Нашата общност",
+                    communityText: "Пътят с рядка диагноза може да бъде труден, но не е нужно да го вървите сами. Нашата група събира хора с болест на Олиер от различни места, за да:",
+                    li1: "Споделят лични истории и ежедневни предизвикателства.",
+                    li2: "Обменят съвети за справяне със симптомите и лечението.",
+                    li3: "Намерят емоционална подкрепа в защитена и разбираща среда.",
+                    resourcesTitle: "Полезни ресурси",
+                    resourcesText: "Тук ще събираме връзки към медицински статии, контакти на специалисти и насоки за физиотерапия, които членовете на нашата група намират за полезни.",
+                    rli1: "Насоки за консултация с ортопед",
+                    rli2: "Международни организации за редки болести",
+                    rli3: "Практически съвети за ежедневието",
+                    contactTitle: "Свържете се с нас",
+                    contactText: "Ако желаете да се присъедините към нашата общност или имате запитване, ще се радваме да ни пишете. Всяко съобщение е важно за нас.",
+                    email: "Имейл: contact@ollier-support-group.org",
+                    footerText: "© 2026 Група за подкрепа - Болест на Олиер. Всички права запазени."
+                },
+                fr: {
+                    fbButton: "Groupe Facebook",
+                    title: "Maladie d'Ollier - Groupe de soutien",
+                    subtitle: "Partage, compréhension et espoir pour tous",
+                    navAbout: "À propos",
+                    navCommunity: "Notre communauté",
+                    navResources: "Ressources",
+                    navContact: "Contact",
+                    aboutTitle: "À propos de la maladie d'Ollier",
+                    aboutText: "La maladie d'Ollier (également connue sous le nom d'enchondromatose) est une maladie rare dans laquelle des tumeurs cartilagineuses bénignes se développent dans les os. Notre mission est de fournir des informations accessibles et précises pour aider les patients et leurs familles à mieux comprendre le diagnostic.",
+                    communityTitle: "Notre communauté",
+                    communityText: "Le parcours avec un diagnostic rare peut être difficile, mais vous n'avez pas à le faire seul. Notre groupe rassemble des personnes atteintes de la maladie d'Ollier de différents endroits pour :",
+                    li1: "Partager des histoires personnelles et des défis quotidiens.",
+                    li2: "Échanger des conseils pour gérer les symptômes et les traitements.",
+                    li3: "Trouver un soutien émotionnel dans un environnement sûr et compréhensif.",
+                    resourcesTitle: "Ressources utiles",
+                    resourcesText: "Nous rassemblerons ici des liens vers des articles médicaux, des contacts de spécialistes et des directives de physiothérapie que les membres de notre groupe trouvent utiles.",
+                    rli1: "Directives pour consulter un chirurgien orthopédiste",
+                    rli2: "Organisations internationales de maladies rares",
+                    rli3: "Conseils pratiques pour la vie quotidienne",
+                    contactTitle: "Contactez-nous",
+                    contactText: "Si vous souhaitez rejoindre notre communauté ou si vous avez une question, nous serions ravis de vous entendre. Chaque message est important pour nous.",
+                    email: "E-mail : contact@ollier-support-group.org",
+                    footerText: "© 2026 Groupe de soutien sur la maladie d'Ollier. Tous droits réservés."
+                },
+                it: {
+                    fbButton: "Gruppo Facebook",
+                    title: "Malattia di Ollier - Gruppo di supporto",
+                    subtitle: "Condivisione, comprensione e speranza per tutti",
+                    navAbout: "Informazioni",
+                    navCommunity: "La nostra comunità",
+                    navResources: "Risorse",
+                    navContact: "Contatti",
+                    aboutTitle: "Informazioni sulla malattia di Ollier",
+                    aboutText: "La malattia di Ollier (nota anche come encondromatosi) è una rara condizione in cui si sviluppano tumori cartilaginei benigni nelle ossa. La nostra missione è fornire informazioni accessibili e accurate per aiutare i pazienti e le loro famiglie a comprendere meglio la diagnosi.",
+                    communityTitle: "La nostra comunità",
+                    communityText: "Il viaggio con una diagnosi rara può essere difficile, ma non devi affrontarlo da solo. Il nostro gruppo riunisce persone con la malattia di Ollier da luoghi diversi per:",
+                    li1: "Condividere storie personali e sfide quotidiane.",
+                    li2: "Scambiare consigli per la gestione dei sintomi e dei trattamenti.",
+                    li3: "Trovare supporto emotivo in un ambiente sicuro e comprensivo.",
+                    resourcesTitle: "Risorse utili",
+                    resourcesText: "Qui raccoglieremo collegamenti ad articoli medici, contatti di specialisti e linee guida per la fisioterapia che i membri del nostro gruppo trovano utili.",
+                    rli1: "Linee guida per la consultazione di un chirurgo ortopedico",
+                    rli2: "Organizzazioni internazionali per le malattie rare",
+                    rli3: "Consigli pratici per la vita quotidiana",
+                    contactTitle: "Contattaci",
+                    contactText: "Se desideri unirti alla nostra comunità o hai una domanda, saremo felici di ascoltarti. Ogni messaggio è importante per noi.",
+                    email: "E-mail: contact@ollier-support-group.org",
+                    footerText: "© 2026 Gruppo di supporto per la malattia di Ollier. Tutti i diritti riservati."
+                },
+                es: {
+                    fbButton: "Grupo de Facebook",
+                    title: "Enfermedad de Ollier - Grupo de apoyo",
+                    subtitle: "Compartir, comprender y esperanza para todos",
+                    navAbout: "Acerca de",
+                    navCommunity: "Nuestra comunidad",
+                    navResources: "Recursos",
+                    navContact: "Contacto",
+                    aboutTitle: "Acerca de la enfermedad de Ollier",
+                    aboutText: "La enfermedad de Ollier (también conocida como encondromatosis) es una afección rara en la que se desarrollan tumores cartilaginosos benignos en los huesos. Nuestra misión es proporcionar información accesible y precisa para ayudar a los pacientes y sus familias a comprender mejor el diagnóstico.",
+                    communityTitle: "Nuestra comunidad",
+                    communityText: "El viaje con un diagnóstico raro puede ser difícil, pero no tiene que hacerlo solo. Nuestro grupo reúne a personas con la enfermedad de Ollier de diferentes lugares para:",
+                    li1: "Compartir historias personales y desafíos diarios.",
+                    li2: "Intercambiar consejos para controlar los síntomas y tratamientos.",
+                    li3: "Encontrar apoyo emocional en un entorno seguro y comprensivo.",
+                    resourcesTitle: "Recursos útiles",
+                    resourcesText: "Aquí recopilaremos enlaces a artículos médicos, contactos de especialistas y pautas de fisioterapia que los miembros de nuestro grupo consideren útiles.",
+                    rli1: "Pautas para consultar a un cirujano ortopédico",
+                    rli2: "Organizaciones internacionales de enfermedades raras",
+                    rli3: "Consejos prácticos para la vida diaria",
+                    contactTitle: "Contáctenos",
+                    contactText: "Si desea unirse a nuestra comunidad o tiene alguna consulta, nos encantaría saber de usted. Cada mensaje es importante para nosotros.",
+                    email: "Correo electrónico: contact@ollier-support-group.org",
+                    footerText: "© 2026 Grupo de apoyo para la enfermedad de Ollier. Todos los derechos reservados."
+                }
+            };
+
+            function changeLanguage(lang) {
+                document.documentElement.lang = lang;
+                const elements = document.querySelectorAll('[data-i18n]');
+                
+                elements.forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (translations[lang] && translations[lang][key]) {
+                        element.textContent = translations[lang][key];
+                    }
+                });
+            }
+
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const selectedLang = event.target.getAttribute('data-lang');
+                    changeLanguage(selectedLang);
+                });
+            });
+
+            changeLanguage('en');
+        });
+    </script>
+
+</body>
+</html>
